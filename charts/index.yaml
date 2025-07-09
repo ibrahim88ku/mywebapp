@@ -3,12 +3,12 @@ entries:
   mywebapp:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-07-09T15:42:52.706045351+04:00"
+    created: "2025-07-09T21:40:09.71874396+04:00"
     description: A Helm chart for Kubernetes
-    digest: 9f1a889bf81f924769a9ba37cf5355985067c7685c457d4cbf821a492bdce8d7
+    digest: ea3d501471bd4aea6b6c10d77815a08f0426eafd9cecaa601d4f06a83f620bbc
     name: mywebapp
     type: application
     urls:
-    - https://ibrahim88ku.github.io/mywebapp/mywebapp-0.1.3.tgz
-    version: 0.1.3
-generated: "2025-07-09T15:42:52.705817085+04:00"
+    - https://ibrahim88ku.github.io/mywebapp/mywebapp-0.1.4.tgz
+    version: 0.1.4
+generated: "2025-07-09T21:40:09.718506858+04:00"
