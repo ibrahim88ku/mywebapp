@@ -1,0 +1,19 @@
+replicaCount: 1
+image:
+  repository: nginx
+  tag: stable
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingress:
+  enabled: true
+  className: "nginx"
+  hosts:
+    - host: mywebapp.homelabdubai.com
+      paths:
+        - path: /
+          pathType: Prefix
+
