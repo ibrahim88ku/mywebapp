@@ -1,156 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome to My Helm Web App</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WebApp Deployment Success</title>
   <style>
-    :root {
-      --primary-color: #0d47a1;
-      --accent-color: #1976d2;
-      --text-color: #333;
-      --bg-color: #f4f6f9;
-    }
-
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      line-height: 1.6;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
     header {
-      background: var(--primary-color);
-      color: #fff;
-      padding: 60px 20px;
+      background-color: #1f2937;
+      padding: 2rem;
       text-align: center;
     }
 
     header h1 {
-      font-size: 3em;
-      margin: 0 0 10px;
-    }
-
-    header p {
-      font-size: 1.2em;
+      margin: 0;
+      font-size: 2.5rem;
     }
 
     main {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 20px;
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    }
-
-    h2 {
-      color: var(--accent-color);
-      margin-top: 40px;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    .highlight {
-      font-weight: bold;
-      color: var(--primary-color);
+      flex: 1;
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      line-height: 1.7;
     }
 
     footer {
+      background-color: #111827;
       text-align: center;
-      padding: 30px 10px;
-      background: #e3eaf2;
-      margin-top: 60px;
-      font-size: 0.95em;
-      color: #555;
+      padding: 1rem;
+      font-size: 0.9rem;
     }
 
-    .button {
-      display: inline-block;
-      padding: 12px 25px;
-      margin-top: 20px;
-      background: var(--accent-color);
-      color: #fff;
-      text-decoration: none;
+    .highlight {
+      color: #00d9ff;
+      font-weight: bold;
+    }
+
+    .cta {
+      background-color: #2563eb;
+      padding: 1rem;
       border-radius: 8px;
-      transition: background 0.3s ease;
+      text-align: center;
+      margin-top: 2rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
 
-    .button:hover {
-      background: #0b61a4;
+    .cta h2 {
+      margin: 0;
+      color: #ffffff;
     }
 
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2em;
-      }
+    a.link {
+      color: #00d9ff;
+      text-decoration: none;
+    }
+
+    a.link:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Welcome to My Helm-Powered Web App</h1>
-    <p>A Kubernetes-native way to deploy a modern static website</p>
+    <h1>🎉 Congratulations! Your WebApp Has Been Successfully Deployed! 🎉</h1>
   </header>
 
   <main>
-    <section>
-      <h2>👋 Hello and Welcome</h2>
-      <p>
-        This is a production-ready static website, deployed using <span class="highlight">Helm</span> and running on a <span class="highlight">Kubernetes cluster</span>. It’s a lightweight, blazing-fast, and secure site ideal for simple applications, portfolios, documentation, or landing pages.
-      </p>
-    </section>
+    <p>Hello and welcome! We're thrilled to have you here.</p>
 
-    <section>
-      <h2>🚀 Technologies Used</h2>
-      <ul>
-        <li><strong>NGINX</strong> – to serve static content</li>
-        <li><strong>Helm</strong> – for packaging and managing Kubernetes resources</li>
-        <li><strong>Kubernetes</strong> – for orchestration and scaling</li>
-        <li><strong>GitHub Actions</strong> – for CI/CD automation</li>
-      </ul>
-    </section>
+    <p>This web application is deployed via a powerful and flexible <span class="highlight">Helm release</span> on a Kubernetes cluster. Whether you're just browsing or preparing for a production rollout — you're in the right place.</p>
 
-    <section>
-      <h2>📁 What’s Inside</h2>
-      <p>
-        This site contains the following features:
-      </p>
-      <ul>
-        <li>Fully customizable HTML and CSS layout</li>
-        <li>Deployed using a Helm chart in <code>/charts/mywebapp</code></li>
-        <li>CI/CD-ready pipeline for versioned releases</li>
-        <li>Ingress and service support for external access</li>
-        <li>ConfigMap-based delivery for static assets</li>
-      </ul>
-    </section>
+    <p>Our platform is designed with scalability, reliability, and speed in mind. We are ready to:</p>
+    <ul>
+      <li>Deploy any kind of modern app — Node.js, Python, Java, Go, or even static sites!</li>
+      <li>Configure rollbacks, blue-green or canary deployments.</li>
+      <li>Integrate CI/CD pipelines for full automation from commit to production.</li>
+      <li>Leverage cloud-native architecture for high availability and disaster recovery.</li>
+    </ul>
 
-    <section>
-      <h2>👨‍💻 About the Builder</h2>
-      <p>
-        This project was crafted with care and expertise by <span class="highlight">Ibrahim</span>, a professional IT Infrastructure and DevOps Architect with over 12 years of experience in virtualization, containers, and cloud-native technologies.
-      </p>
-      <p>
-        Ibrahim specializes in Kubernetes, Helm, Linux, CI/CD pipelines, storage solutions, and infrastructure automation. If you need a scalable and secure solution, you're in the right place!
-      </p>
+    <div class="cta">
+      <h2>We are fully ready to deploy your next big idea — and go LIVE!</h2>
+    </div>
 
-      <a class="button" href="https://www.linkedin.com/in/your-profile" target="_blank">Connect on LinkedIn</a>
-    </section>
-
-    <section>
-      <h2>📌 Want to Customize?</h2>
-      <p>
-        You can easily update this site by editing the <code>app/index.html</code> file and redeploying the chart:
-      </p>
-      <pre><code>helm upgrade mywebapp charts/mywebapp</code></pre>
-    </section>
+    <p>If you’re a developer, DevOps engineer, or product manager looking to launch fast and scale effortlessly — look no further. This is your launchpad.</p>
   </main>
 
   <footer>
-    <p>Built with ❤️ by <strong>Ibrahim</strong> · Deployed with Helm · 2025</p>
+    Developed and maintained by <strong>Ibrahim</strong> — Your DevOps & Infrastructure Expert<br>
+    🔗 LinkedIn: <a href="https://www.linkedin.com/in/ibrahim88ku/" target="_blank" class="link">ibrahim88ku</a>
   </footer>
 </body>
 </html>
