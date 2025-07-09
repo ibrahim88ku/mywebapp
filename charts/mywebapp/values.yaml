@@ -12,7 +12,7 @@ ingress:
   enabled: true
   className: "nginx"
   hosts:
-    - host: mywebapp.local
+    - host: mywebapp.homelabdubai.com
       paths:
         - path: /
           pathType: Prefix
