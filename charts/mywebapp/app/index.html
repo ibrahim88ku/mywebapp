@@ -1,9 +1,157 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Helm Web App</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to My Helm Web App</title>
+  <style>
+    :root {
+      --primary-color: #0d47a1;
+      --accent-color: #1976d2;
+      --text-color: #333;
+      --bg-color: #f4f6f9;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary-color);
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0 0 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    h2 {
+      color: var(--accent-color);
+      margin-top: 40px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: var(--primary-color);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      background: #e3eaf2;
+      margin-top: 60px;
+      font-size: 0.95em;
+      color: #555;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 25px;
+      margin-top: 20px;
+      background: var(--accent-color);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .button:hover {
+      background: #0b61a4;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello from My Web App!</h1>
+  <header>
+    <h1>Welcome to My Helm-Powered Web App</h1>
+    <p>A Kubernetes-native way to deploy a modern static website</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>👋 Hello and Welcome</h2>
+      <p>
+        This is a production-ready static website, deployed using <span class="highlight">Helm</span> and running on a <span class="highlight">Kubernetes cluster</span>. It’s a lightweight, blazing-fast, and secure site ideal for simple applications, portfolios, documentation, or landing pages.
+      </p>
+    </section>
+
+    <section>
+      <h2>🚀 Technologies Used</h2>
+      <ul>
+        <li><strong>NGINX</strong> – to serve static content</li>
+        <li><strong>Helm</strong> – for packaging and managing Kubernetes resources</li>
+        <li><strong>Kubernetes</strong> – for orchestration and scaling</li>
+        <li><strong>GitHub Actions</strong> – for CI/CD automation</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>📁 What’s Inside</h2>
+      <p>
+        This site contains the following features:
+      </p>
+      <ul>
+        <li>Fully customizable HTML and CSS layout</li>
+        <li>Deployed using a Helm chart in <code>/charts/mywebapp</code></li>
+        <li>CI/CD-ready pipeline for versioned releases</li>
+        <li>Ingress and service support for external access</li>
+        <li>ConfigMap-based delivery for static assets</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>👨‍💻 About the Builder</h2>
+      <p>
+        This project was crafted with care and expertise by <span class="highlight">Ibrahim</span>, a professional IT Infrastructure and DevOps Architect with over 12 years of experience in virtualization, containers, and cloud-native technologies.
+      </p>
+      <p>
+        Ibrahim specializes in Kubernetes, Helm, Linux, CI/CD pipelines, storage solutions, and infrastructure automation. If you need a scalable and secure solution, you're in the right place!
+      </p>
+
+      <a class="button" href="https://www.linkedin.com/in/your-profile" target="_blank">Connect on LinkedIn</a>
+    </section>
+
+    <section>
+      <h2>📌 Want to Customize?</h2>
+      <p>
+        You can easily update this site by editing the <code>app/index.html</code> file and redeploying the chart:
+      </p>
+      <pre><code>helm upgrade mywebapp charts/mywebapp</code></pre>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built with ❤️ by <strong>Ibrahim</strong> · Deployed with Helm · 2025</p>
+  </footer>
 </body>
 </html>
+
